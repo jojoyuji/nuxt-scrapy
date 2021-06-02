@@ -1,30 +1,15 @@
-[![@nuxtjs/axios](https://axios.nuxtjs.org/preview.png)](https://axios.nuxtjs.org)
 
-# @nuxtjs/axios
+# nuxt-scrapy
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
-[![Codecov][codecov-src]][codecov-href]
-[![License][license-src]][license-href]
+> Easy Headless content scrapper for [Nuxt](https://nuxtjs.org).
 
-> Secure and easy [Axios](https://github.com/axios/axios) integration for [Nuxt](https://nuxtjs.org).
-
-- [✨ &nbsp;Release Notes](https://axios.nuxtjs.org/releases)
-- [📖 &nbsp;Documentation](https://axios.nuxtjs.org)
 
 ## Features
 
-- Automatically set base URL for client & server side
-- Exposes `setToken` function to `$axios` so we can easily and globally set authentication tokens
-- Automatically enables `withCredentials` when requesting to base URL
-- Proxy request headers in SSR
-- Fetch Style requests
-- Integrated with Nuxt progress bar
-- Integrated with Proxy Module
-- Auto retry requests with axios-retry
-
-[📖 &nbsp;Read more](https://axios.nuxtjs.org)
+- Easily saves content as JSON files
+- Fetch content from any REST api (graphql is still not suported)
+- Content fetching made in build/generate time allowing easy JAMSTACK usage with ex:Netlify
+- Recursive fetching (GET /todos and GET /todos/_id)
 
 ## Contributing
 
@@ -36,21 +21,4 @@
 
 [MIT License](./LICENSE)
 
-Copyright (c) Nuxt Community
-
-<!-- Badges -->
-<!-- Badges -->
-[npm-version-src]: https://flat.badgen.net/npm/v/@nuxtjs/axios
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/axios
-
-[npm-downloads-src]: https://flat.badgen.net/npm/dm/@nuxtjs/axios
-[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/axios
-
-[github-actions-ci-src]: https://github.com/nuxt-community/axios-module/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/nuxt-community/axios-module/actions?query=workflow%3Aci
-
-[codecov-src]: https://flat.badgen.net/codecov/c/github/nuxt-community/axios-module
-[codecov-href]: https://codecov.io/gh/nuxt-community/axios-module
-
-[license-src]: https://img.shields.io/npm/l/@nuxtjs/axios.svg
-[license-href]: https://npmjs.com/package/@nuxtjs/axios
+Copyright (c) Jonatas Hashimoto 
